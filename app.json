@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/launch/launch",
+    "pages/index/index",
+    "pages/plane/plane",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#47484c",
+    "navigationBarTitleText": "攻略",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#abb4bf",
+    "selectedColor": "#3281ff",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "img/tab_home_normal.png",
+        "selectedIconPath": "img/tab_home.png"
+      },
+      {
+        "pagePath": "pages/plane/plane",
+        "text": "攻略",
+        "iconPath": "img/tab_activity_normal.png",
+        "selectedIconPath": "img/tab_activity.png"
+      }
+    ]
+  }
+}

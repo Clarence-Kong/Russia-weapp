@@ -1,0 +1,92 @@
+<view class="outer">
+    <view class="top">
+        <view class="wrapper">
+            <image mode='widthFix' src='../../img/head.jpg'></image>
+            <view class="text ">
+                <view class="up">海参崴之旅</view>
+                <view class="down">Russia</view>
+            </view>
+            <view class="button">
+                <view class=" bon wether">
+                    <view>
+                        <i-icon type="browse" size="22" color="aliceblue" />
+                    </view>
+                    天气
+                </view>
+
+                <view class=" bon list">
+                    <view>
+                        <i-icon type="tasklist" size="22" color="aliceblue" />
+                    </view>
+                    清单
+                </view>
+                <view class=" bon count">
+                    <view>
+                        <i-icon type="redpacket_fill" size="22" color="aliceblue" />
+                    </view>
+                    记账
+                </view>
+                <view class=" bon work">
+                    <view>
+                        <i-icon type="document_fill" size="22" color="aliceblue" />
+                    </view>
+                    攻略
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="line"></view>
+        <i-sticky scrollTop="{{scrollTop}}">
+            <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
+                <view slot="title" class="title">
+                    <view class="tit-pot"></view>
+                    <text>Day-1</text>
+                </view>
+                <view slot="content" class="content">
+                    <view class="pot" >
+                        <i-icon type="customerservice" />
+                    </view>
+                    <view class="right">
+                        <view class="traffic">火车</view>
+                        <view></view>
+                    </view>
+                </view>
+            </i-sticky-item>
+            <i-sticky-item i-class="i-sticky-demo-title">
+                <view slot="title" class="title">
+                    <view class="tit-pot"></view>
+                    <text>Day-2</text>
+                </view>
+                <view slot="content" class="inner">
+                    <view class="i-sticky-demo-item">注册程序</view>
+                    <view class="i-sticky-demo-item">场景值</view>
+                    <view class="i-sticky-demo-item">注册页面</view>
+                    <view class="i-sticky-demo-item">路由</view>
+                    <view class="i-sticky-demo-item">模块化</view>
+                    <view class="i-sticky-demo-item">API</view>
+                </view>
+            </i-sticky-item>
+            <i-sticky-item i-class="i-sticky-demo-title">
+                <view slot="title" class="title">
+                <view class="tit-pot"></view>
+                <text>Day-3</text>
+                </view>
+                <view slot="content">
+                    <view class="i-sticky-demo-item">注册程序</view>
+                    <view class="i-sticky-demo-item">场景值</view>
+                    <view class="i-sticky-demo-item">注册页面</view>
+                    <view class="i-sticky-demo-item">路由</view>
+                    <view class="i-sticky-demo-item">模块化</view>
+                    <view class="i-sticky-demo-item">API</view>
+                    <view class="i-sticky-demo-item">注册程序</view>
+                    <view class="i-sticky-demo-item">场景值</view>
+                    <view class="i-sticky-demo-item">注册页面</view>
+                    <view class="i-sticky-demo-item">路由</view>
+                    <view class="i-sticky-demo-item">模块化</view>
+                    <view class="i-sticky-demo-item">API</view>
+                </view>
+            </i-sticky-item>
+        </i-sticky>
+    </view>
+</view>
