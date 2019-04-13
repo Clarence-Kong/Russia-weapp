@@ -1,9 +1,9 @@
 .i-sticky-item-header {
     position: relative;
-    background: #eee;
+    /* background: #eee; */
     font-size: 14px;
     width: 100%;
-    height: 32px;
+    min-height: 60px;
     line-height: 32px;
     z-index: -20;
 }
@@ -17,11 +17,16 @@
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
-    background: #eee;
+    /* background: #eee; */
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: rgb(124, 111, 111);
 }
 
 .i-sticky-fixed .i-sticky-title {
     position: fixed;
     top: 0;
-    z-index: -20;
+    z-index: 30;
+    border: 0;
+    background-color: #eee;
 }

@@ -41,52 +41,173 @@
             <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
                 <view slot="title" class="title">
                     <view class="tit-pot"></view>
-                    <text>Day-1</text>
-                </view>
-                <view slot="content" class="content">
-                    <view class="pot" >
-                        <i-icon type="customerservice" />
-                    </view>
-                    <view class="right">
-                        <view class="traffic">火车</view>
-                        <view></view>
+                    <view class="time">
+                        <view class="day">Day-1</view>
+                        <view>哈尔滨</view>
                     </view>
                 </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <i-icon type="customerservice" />
+                        </view>
+                        <view class="right">
+                            <view class="traffic">火车</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view>哈尔滨</view>
+                                    <view>香坊站</view>
+                                    <view>20:00</view>
+                                </view>
+                                <view>=></view>
+                                <view class="toPlace">
+                                    <view>哈尔滨</view>
+                                    <view>香坊站</view>
+                                    <view>20:00</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
             </i-sticky-item>
-            <i-sticky-item i-class="i-sticky-demo-title">
+            <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
                 <view slot="title" class="title">
                     <view class="tit-pot"></view>
-                    <text>Day-2</text>
+                    <view class="time">
+                        <view class="day">Day-1</view>
+                        <view>哈尔滨</view>
+                    </view>
                 </view>
-                <view slot="content" class="inner">
-                    <view class="i-sticky-demo-item">注册程序</view>
-                    <view class="i-sticky-demo-item">场景值</view>
-                    <view class="i-sticky-demo-item">注册页面</view>
-                    <view class="i-sticky-demo-item">路由</view>
-                    <view class="i-sticky-demo-item">模块化</view>
-                    <view class="i-sticky-demo-item">API</view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <i-icon type="customerservice" />
+                        </view>
+                        <view class="right">
+                            <view class="traffic">火车</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view>哈尔滨</view>
+                                    <view>香坊站</view>
+                                    <view>20:00</view>
+                                </view>
+                                <view>=></view>
+                                <view class="toPlace">
+                                    <view>哈尔滨</view>
+                                    <view>香坊站</view>
+                                    <view>20:00</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
                 </view>
+
             </i-sticky-item>
-            <i-sticky-item i-class="i-sticky-demo-title">
+            <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
                 <view slot="title" class="title">
-                <view class="tit-pot"></view>
-                <text>Day-3</text>
+                    <view class="tit-pot"></view>
+                    <view class="time">
+                        <view class="day">Day-2</view>
+                        <view>哈尔滨</view>
+                    </view>
                 </view>
-                <view slot="content">
-                    <view class="i-sticky-demo-item">注册程序</view>
-                    <view class="i-sticky-demo-item">场景值</view>
-                    <view class="i-sticky-demo-item">注册页面</view>
-                    <view class="i-sticky-demo-item">路由</view>
-                    <view class="i-sticky-demo-item">模块化</view>
-                    <view class="i-sticky-demo-item">API</view>
-                    <view class="i-sticky-demo-item">注册程序</view>
-                    <view class="i-sticky-demo-item">场景值</view>
-                    <view class="i-sticky-demo-item">注册页面</view>
-                    <view class="i-sticky-demo-item">路由</view>
-                    <view class="i-sticky-demo-item">模块化</view>
-                    <view class="i-sticky-demo-item">API</view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <i-icon type="customerservice" />
+                        </view>
+                        <view class="right">
+                            <view class="traffic">火车</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view class="place">哈尔滨</view>
+                                    <view class="point">香坊站</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                                <view>=></view>
+                                <view class="toPlace">
+                                    <view class="place">哈尔滨</view>
+                                    <view class="point">香坊站</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
                 </view>
+
+            </i-sticky-item>
+            <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
+                <view slot="title" class="title">
+                    <view class="tit-pot"></view>
+                    <view class="time">
+                        <view class="day">Day-3</view>
+                        <view>哈尔滨</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <i-icon type="customerservice" />
+                        </view>
+                       
+                        <view class="right">
+                            <view class="traffic">火车</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view>哈尔滨</view>
+                                    <view>香坊站</view>
+                                    <view>20:00</view>
+                                </view>
+                                <view>=></view>
+                                <view class="toPlace">
+                                    <view>哈尔滨</view>
+                                    <view>香坊站</view>
+                                    <view>20:00</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
+            </i-sticky-item>
+            <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
+                <view slot="title" class="title">
+                    <view class="tit-pot"></view>
+                    <view class="time">
+                        <view class="day">Day-1</view>
+                        <view>哈尔滨</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <i-icon type="customerservice" />
+                        </view>
+                        <view class="right">
+                            <view class="traffic">火车</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view>哈尔滨</view>
+                                    <view>香坊站</view>
+                                    <view>20:00</view>
+                                </view>
+                                <view>=></view>
+                                <view class="toPlace">
+                                    <view>哈尔滨</view>
+                                    <view>香坊站</view>
+                                    <view>20:00</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
             </i-sticky-item>
         </i-sticky>
+
     </view>
+
+
+    <view></view>
 </view>
