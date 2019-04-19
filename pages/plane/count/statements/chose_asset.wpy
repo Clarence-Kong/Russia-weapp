@@ -1,0 +1,126 @@
+<template lang="wxml">
+  <view class="category-component">
+    <view wx:if="{{ frequent.length > 0 }}">
+      <view class="header fs14">常用</view>
+      <view class="column" wx:for="{{ frequent }}" @tap="setAsset('{{ item }}')">
+        <view class="category">
+          <image class='ljt-icon' src="{{ item.icon_path }}"></image>
+          <text class="category-name fs16">{{ item.name }}</text>
+          <text class="money">（¥{{ item.amount }}）</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:for="{{ list }}">
+      <view class="header fs14">{{ item.name }}</view>
+      <view class="column" wx:for="{{ item.childs }}" @tap="setAsset('{{ item }}')">
+        <view class="category">
+          <image class='ljt-icon' src="{{ item.icon_path }}"></image>
+          <text class="category-name fs16">{{ item.name }}</text>
+          <text class="money">（¥{{ item.amount }}）</text>
+        </view>
+      </view>
+    </view>
+
+    <navigator url="/pages/assets/asset_form">
+      <view class="add-wallet">
+        <image src="../../public/images/wallet-add.png"></image>
+        <text class="fs16" bindtap="newAsset">添加资产类型</text>
+      </view>
+    </navigator>
+
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+  import wxRequest from '@/utils/wxRequest'
+  import Category from '../../components/category_item'
+  import Session from '@/utils/session'
+  export default class choseAsset extends wepy.page {
+    config = {
+      navigationBarTitleText: '选择资产'
+    }
+
+    data = {
+      frequent: [],
+      last: null,
+      list: [],
+      type: 'expend'
+    }
+    
+    components = {
+			category: Category
+    };
+
+    onLoad (options) {
+      this.type = options.type
+    }
+    
+    onShow () {
+      this.getAsset()
+    }
+
+    methods = {
+      setAsset (asset) {
+        const pages = getCurrentPages()
+        const prevPage = pages[pages.length - 2]
+        if (this.type == 'expend') {
+          prevPage.$Expend$setAsset(asset)
+        } else if (this.type == 'income') {
+          prevPage.$Income$setAsset(asset)
+        } else {
+          prevPage.$Transfer$setAsset(asset)
+        }
+        wepy.navigateBack({
+          delta: 1
+        })
+      }
+    }
+
+    async getAsset () {
+      const sessionKey = `@statement_form_asset@`
+      if (Session.get(sessionKey)) {
+        const cacheData = Session.get(sessionKey)
+        this.frequent = cacheData.frequent
+        this.last = cacheData.last
+        this.list = cacheData.categories
+        this.$apply()
+      }
+
+      const data = await wxRequest.Get('statements/assets')
+      this.frequent = data.frequent
+      this.last = data.last
+      this.list = data.categories
+      this.$apply()
+      Session.set(sessionKey, data)
+    }
+
+    computed = {
+      showLast () {
+        return this.last == null
+      }
+    }
+  }
+</script>
+<style lang="scss" src="@/public/styles/chose_category.scss"></style>
+<style lang="scss">
+  .category-component {
+    > view {
+      overflow: hidden;
+    }
+  }
+  .add-wallet {
+    display:flex;
+    justify-content:center;
+    padding:8rpx 0;
+    color:#999;
+    margin:8rpx 0;
+  }
+  .add-wallet image {
+    width:50rpx;
+    height:50rpx;
+    display:inline-block;
+    margin-right:8rpx;
+  }
+</style>
