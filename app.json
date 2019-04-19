@@ -1,16 +1,36 @@
 {
   "pages": [
+    "pages/plane/count/count",
     "pages/launch/launch",
     "pages/plane/wether/wether",
     "pages/index/index",
     "pages/plane/plane",
-    "pages/logs/logs"
+    "pages/logs/logs",
     
+    "pages/plane/work/work",
+    "pages/plane/list/list",
+    "pages/plane/wether/wether"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#47484c",
+   
     "navigationBarTitleText": "攻略",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
