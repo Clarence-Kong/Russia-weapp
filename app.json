@@ -4,13 +4,12 @@
     "pages/index/index",
     "pages/plane/plane",
     "pages/logs/logs",
-    "pages/plane/count",
     "pages/plane/wether"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#47484c",
-    "navigationBarTitleText": "毛",
+    "navigationBarTitleText": "攻略",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
