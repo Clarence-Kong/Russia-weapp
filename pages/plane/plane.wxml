@@ -137,12 +137,93 @@
                     </view>
                 </view>
                 <view slot="content" class="outerContent">
-                    <view class="content">
+                    <view class="contents">
                         <view class="pot">
-                            <view class="innerPot">
+                            <view class="innerPot_places">
                                 <i-icon class="i-icon" type="customerservice" />
                             </view>
                         </view>
+                        <view class="places">俄罗斯凯旋门</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">苏维埃战士纪念碑</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">列宁纪念碑</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">符拉迪沃斯托克火车站</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_foods">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">zuma餐厅</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">东正教堂</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">C-56潜艇博物馆</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">艾格舍利特灯塔</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_foods">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">酒吧</view>
                     </view>
                 </view>
             </i-sticky-item>
@@ -158,12 +239,73 @@
                     </view>
                 </view>
                 <view slot="content" class="outerContent">
-                    <view class="content">
+                    <view class="contents">
                         <view class="pot">
-                            <view class="innerPot">
+                            <view class="innerPot_foods">
                                 <i-icon class="i-icon" type="customerservice" />
                             </view>
                         </view>
+                        <view class="places">supra</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">海洋馆</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">滨海边疆区州立美术馆</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_foods">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">milk&honey</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">马林斯基剧院滨海分院</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">鹰巢山</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_foods">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">Palau fish</view>
                     </view>
                 </view>
             </i-sticky-item>
@@ -179,12 +321,23 @@
                     </view>
                 </view>
                 <view slot="content" class="outerContent">
-                    <view class="content">
+                    <view class="contents">
                         <view class="pot">
-                            <view class="innerPot">
+                            <view class="innerPot_foods">
                                 <i-icon class="i-icon" type="customerservice" />
                             </view>
                         </view>
+                        <view class="places">一号食堂</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="contents">
+                        <view class="pot">
+                            <view class="innerPot_places">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="places">海上游览</view>
                     </view>
                 </view>
             </i-sticky-item>
