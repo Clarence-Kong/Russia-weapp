@@ -4,9 +4,9 @@
     "pages/index/index",
     "pages/plane/plane",
     "pages/logs/logs",
-    "pages/plane/work",
-    "pages/plane/list",
-    "pages/plane/count",
+    "pages/plane/work/work",
+    "pages/plane/list/list",
+    "pages/plane/count/count",
     "pages/plane/wether/wether"
   ],
   "window": {

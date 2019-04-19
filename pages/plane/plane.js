@@ -15,5 +15,20 @@ Page({
         wx.navigateTo({
             url: './wether/wether'
         })
+    },
+    count(){
+      wx.navigateTo({
+        url: './count/count'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: './list/list'
+      })
+    },
+    work(){
+      wx.navigateTo({
+        url: './work/work'
+      })
     }
 });
