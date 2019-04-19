@@ -1,5 +1,3 @@
-.outer {}
-
 .top {
     display: flex;
     flex-direction: column;

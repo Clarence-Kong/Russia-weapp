@@ -20,7 +20,7 @@
                     </view>
                     清单
                 </view>
-                <view class=" bon count" bindtap="count">  
+                <view class=" bon count" bindtap="count">
                     <view>
                         <i-icon type="redpacket_fill" size="22" color="aliceblue" />
                     </view>
@@ -35,11 +35,15 @@
             </view>
         </view>
     </view>
+
     <view class="bottom">
         <i-sticky scrollTop="{{scrollTop}}">
+
             <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
                 <view slot="title" class="title">
-                    <view class="tit-pot"><view class="line"></view></view>
+                    <view class="tit-pot">
+                        <view class="line"></view>
+                    </view>
                     <view class="time">
                         <view class="day">Day-1</view>
                         <view>哈尔滨</view>
@@ -53,26 +57,225 @@
                             </view>
                         </view>
                         <view class="right">
-                            <view class="traffic">火车</view>
+                            <view class="traffic">火车2727</view>
                             <view class="road">
                                 <view class="startPlace">
                                     <view class="place">哈尔滨</view>
-                                    <view class="point">香坊站</view>
+                                    <view class="point">哈尔滨站</view>
                                     <view class="goTime">20:00</view>
                                 </view>
-                                <view>=></view>
+                                <view>--></view>
                                 <view class="toPlace">
-                                    <view class="place">哈尔滨</view>
-                                    <view class="point">香坊站</view>
+                                    <view class="place">绥芬河</view>
+                                    <view class="point">绥芬河站</view>
                                     <view class="goTime">20:00</view>
                                 </view>
                             </view>
                         </view>
                     </view>
                 </view>
-
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <view class="innerPot">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="right">
+                            <view class="traffic">国际列车401/402</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view class="place">绥芬河</view>
+                                    <view class="point">绥芬河站</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                                <view>--></view>
+                                <view class="toPlace">
+                                    <view class="place">波格拉尼奇内</view>
+                                    <view class="point">格洛泆科沃口岸</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <view class="innerPot">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="right">
+                            <view class="traffic">打车||包车</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view class="place">波格拉尼奇内</view>
+                                    <view class="point">格洛泆科沃口岸</view>
+                                    <!-- <view class="goTime">20:00</view> -->
+                                </view>
+                                <view>--></view>
+                                <view class="toPlace">
+                                    <view class="place">符拉迪沃斯托克</view>
+                                    <view class="point">伊斯托克酒店</view>
+                                    <!-- <view class="goTime">20:00</view> -->
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
             </i-sticky-item>
-        
+
+            <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
+                <view slot="title" class="title">
+                    <view class="tit-pot">
+                        <view class="line"></view>
+                    </view>
+                    <view class="time">
+                        <view class="day">Day-2</view>
+                        <view>海参崴</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <view class="innerPot">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </i-sticky-item>
+
+            <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
+                <view slot="title" class="title">
+                    <view class="tit-pot">
+                        <view class="line"></view>
+                    </view>
+                    <view class="time">
+                        <view class="day">Day-3</view>
+                        <view>海参崴</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <view class="innerPot">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </i-sticky-item>
+
+            <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
+                <view slot="title" class="title">
+                    <view class="tit-pot">
+                        <view class="line"></view>
+                    </view>
+                    <view class="time">
+                        <view class="day">Day-4</view>
+                        <view>海参崴</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <view class="innerPot">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </i-sticky-item>
+
+            <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
+                <view slot="title" class="title">
+                    <view class="tit-pot">
+                        <view class="line"></view>
+                    </view>
+                    <view class="time">
+                        <view class="day">Day-5</view>
+                        <view>哈尔滨</view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <view class="innerPot">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="right">
+                            <view class="traffic">打车||包车</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view class="place">符拉迪沃斯托克</view>
+                                    <view class="point">伊斯托克酒店</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                                <view>--></view>
+                                <view class="toPlace">
+                                    <view class="place">波格拉尼奇内</view>
+                                    <view class="point">格洛泆科沃口岸</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <view class="innerPot">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="right">
+                            <view class="traffic">国际列车401/402</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view class="place">波格拉尼奇内</view>
+                                    <view class="point">格洛泆科沃口岸</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                                <view>--></view>
+                                <view class="toPlace">
+                                    <view class="place">绥芬河</view>
+                                    <view class="point">绥芬河站</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view slot="content" class="outerContent">
+                    <view class="content">
+                        <view class="pot">
+                            <view class="innerPot">
+                                <i-icon class="i-icon" type="customerservice" />
+                            </view>
+                        </view>
+                        <view class="right">
+                            <view class="traffic">动车</view>
+                            <view class="road">
+                                <view class="startPlace">
+                                    <view class="place">绥芬河</view>
+                                    <view class="point">绥芬河站</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                                <view>--></view>
+                                <view class="toPlace">
+                                    <view class="place">哈尔滨</view>
+                                    <view class="point">哈尔滨西站</view>
+                                    <view class="goTime">20:00</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </i-sticky-item>
+
         </i-sticky>
 
     </view>
