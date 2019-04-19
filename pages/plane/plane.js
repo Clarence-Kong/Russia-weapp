@@ -13,7 +13,7 @@ Page({
     },
     wether() {
         wx.navigateTo({
-            url: './count'
+            url: './wether/wether'
         })
     }
 });
