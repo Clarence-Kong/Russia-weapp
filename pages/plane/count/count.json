@@ -1,6 +1,4 @@
 {
-    "usingComponents": {
-        "item": "/components/Item/Item"
-    },
+    "usingComponents": {},
     "navigationBarTitleText": "记账"
 }
