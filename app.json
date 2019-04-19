@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/launch/launch",
+    "pages/plane/wether/wether",
     "pages/index/index",
     "pages/plane/plane",
     "pages/logs/logs",
@@ -50,5 +51,10 @@
         "selectedIconPath": "img/tab_activity.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "定位以获取当前位置天气信息"
+    }
   }
 }
