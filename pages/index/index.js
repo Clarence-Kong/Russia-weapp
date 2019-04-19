@@ -14,7 +14,7 @@ Page({
  modalTap(){
      wx.showModal({
          title: '哈哈哈哈',
-         content: '刘铭傻吗',
+         content: '扣儿子傻吗',
          confirmText: '确定',
          cancelText: '真的'
      })
