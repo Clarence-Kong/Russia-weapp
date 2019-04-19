@@ -1,13 +1,13 @@
 {
   "pages": [
     "pages/launch/launch",
+    "pages/plane/list/list",
     "pages/plane/plane",
     "pages/plane/count/count",
     "pages/plane/wether/wether",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/plane/work/work",
-    "pages/plane/list/list"
+    "pages/plane/work/work"
   ],
   "window": {
     "backgroundTextStyle": "dark",
