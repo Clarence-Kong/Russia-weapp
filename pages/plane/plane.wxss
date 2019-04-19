@@ -1,5 +1,3 @@
-.outer {}
-
 .top {
     display: flex;
     flex-direction: column;
@@ -156,6 +154,34 @@ image {
     line-height: 12rpx;
 }
 
+.innerPot_palces {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    width: 35rpx;
+    height: 35rpx;
+    align-items: center;
+    background-color: rgb(255, 36, 127);
+    border-radius: 50%;
+    line-height: 12rpx;
+}
+
+.innerPot_foods {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    width: 35rpx;
+    height: 35rpx;
+    align-items: center;
+    background-color: rgba(115, 255, 0, 0.664);
+    border-radius: 50%;
+    line-height: 12rpx;
+}
+
 .outerContent {
     display: flex;
     flex-direction: row;
@@ -168,6 +194,16 @@ image {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 94vw;
+    background-color: #fff;
+    /* box-shadow:1px 1px 1px #47484c; */
+    border: 1px solid rgb(204, 204, 214);
+    border-radius: 15rpx;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
     width: 94vw;
     background-color: #fff;
     /* box-shadow:1px 1px 1px #47484c; */
@@ -209,4 +245,9 @@ image {
 .goTime {
     font-size: 12px;
     color: blue;
+}
+
+.places {
+    font-size: 36rpx;
+    float:left;
 }

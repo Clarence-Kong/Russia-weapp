@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/plane/plane",
     "pages/launch/launch",
     "pages/plane/count/count",
     "pages/plane/wether/wether",
     "pages/index/index",
-    "pages/plane/plane",
     "pages/logs/logs",
+    "pages/plane/count/count",
     "pages/plane/work/work",
     "pages/plane/list/list"
   ],

@@ -1,45 +1,67 @@
-.account-detail{
+.account-detail {
     height: 100rpx;
     padding: 0 30rpx;
 }
 
-.account-amount{
+.account-amount {
     padding: 0 30rpx;
 }
 
-.add-one{
+.add-one {
     margin-top: 20rpx;
 }
 
-.account-list-text{
-    color:gray;
-    margin:30rpx 0 0 30rpx;
+.account-list-text {
+    color: gray;
+    margin: 30rpx 0 0 30rpx;
 }
 
-.account-list-all-amount{
-    color:gray;
+.account-list-all-amount {
+    color: gray;
     align-self: flex-end;
-    padding-right: 25rpx;
+    margin-left: 10%;
+    padding-left: 25rpx;
 }
 
 
-.account-list{
-    color:gray;
-    margin:30rpx 0 0 30rpx;
+.account-list {
+    color: gray;
+    margin: 30rpx 0 0 30rpx;
     display: flex;
     flex-direction: row;
-    background-color:wheat;
+    background-color: wheat;
     line-height: 70rpx;
 }
 
 
-.account-list-detail{
-    flex:1;
+.account-list-detail {
+    flex: 1;
 }
 
 
-.account-list-amount{
+.account-list-amount {
     width: 100rpx;
 }
- 
 
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.quick {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: 1rpx solid #DDD;
+  padding: 20rpx;
+  color: #9B9B9B;
+}
+
+.quick .add {
+  width: 40rpx;
+  margin-right: 10rpx;
+  color: rgb(73, 4, 112);
+  font-size: 40rpx;
+  font-weight: bold;
+}
