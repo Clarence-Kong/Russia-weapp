@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="788b9969-9841-4d59-a2ab-ef0d38a38050" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/plane/count.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/count.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/count.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/count.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/count/count.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/count/count.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/count/count.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/count/count.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/plane.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/plane/plane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/wether.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/wether.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/wether.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plane/wether.wxss" beforeDir="false" />
-    </list>
+    <list default="true" id="788b9969-9841-4d59-a2ab-ef0d38a38050" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -99,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555689551995</updated>
-      <workItem from="1555689574613" duration="218000" />
+      <workItem from="1555689574613" duration="779000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1555689785542</created>
@@ -112,15 +98,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267000" />
+    <option name="totallyTimeSpent" value="779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Event Log" side_tool="true" visible="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

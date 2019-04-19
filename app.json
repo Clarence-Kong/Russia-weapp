@@ -4,8 +4,8 @@
     "pages/index/index",
     "pages/plane/plane",
     "pages/logs/logs",
-    "pages/plane/wether",
-    "pages/plane/jizhang"
+    "pages/plane/jizhang",
+    "pages/plane/wether/wether"
   ],
   "window": {
     "backgroundTextStyle": "dark",
