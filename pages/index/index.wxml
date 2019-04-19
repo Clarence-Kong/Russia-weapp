@@ -1,4 +1,34 @@
 <!--index.wxml-->
 <view class="container">
-啥也没有
+        <swiper class="lunbo" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <swiper-item>
+                <image class="image" mode="scaleToFill"  src="../../img/1.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="image" mode="scaleToFill" src="../../img/2.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="image" mode="scaleToFill" src="../../img/3.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="image" mode="scaleToFill" src="../../img/4.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="image" mode="scaleToFill" src="../../img/5.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="image" mode="scaleToFill" src="../../img/6.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="image" mode="scaleToFill" src="../../img/7.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="image" mode="scaleToFill" src="../../img/8.jpg"></image>
+            </swiper-item>
+        </swiper>
+        <view class="but">
+            <button type="default" bindtap="modalTap">
+                有点傻吧
+            </button>
+        </view>
 </view>

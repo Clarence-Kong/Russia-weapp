@@ -5,7 +5,6 @@
     width: 100%;
     min-height: 60px;
     line-height: 32px;
-    z-index: -20;
 }
 
 .i-sticky-item-content {
@@ -20,7 +19,7 @@
     /* background: #eee; */
     border-style: solid;
     border-width: 1px 0;
-    border-color: rgb(124, 111, 111);
+    border-color: rgb(196, 203, 207);
 }
 
 .i-sticky-fixed .i-sticky-title {

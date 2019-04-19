@@ -1,14 +1,19 @@
 Page({
-     data : {
-        scrollTop : 0
+    data: {
+        scrollTop: 0
     },
-    onChange(event){
-        console.log(event.detail,'click right menu callback data')
+    onChange(event) {
+        console.log(event.detail, 'click right menu callback data')
     },
     //页面滚动执行方式
-    onPageScroll(event){
+    onPageScroll(event) {
         this.setData({
-            scrollTop : event.scrollTop
+            scrollTop: event.scrollTop
+        })
+    },
+    wether() {
+        wx.navigateTo({
+            url: './count'
         })
     }
 });

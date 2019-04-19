@@ -63,18 +63,10 @@ image {
 
 .bottom {
     position: relative;
-    background-color: rgba(143, 133, 133, 0);
+    background-color: rgba(226, 225, 228, 0);
 }
 
-.line {
-    position: absolute;
-    margin: 44rpx 0;
-    z-index: -10;
-    left: 5%;
-    width: 15rpx;
-    height: 100%;
-    background-color: rgba(185, 157, 157, 0.5);
-}
+
 
 .outTitle {
     display: flex;
@@ -111,6 +103,7 @@ image {
 }
 
 .tit-pot {
+    position: relative;
     display: block;
     width: 30rpx;
     height: 30rpx;
@@ -119,17 +112,55 @@ image {
     margin-right: 15rpx;
 }
 
+.line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -10;
+    top: 35rpx;
+    width: 7rpx;
+    height: 70vh;
+    background-color: rgba(185, 157, 157, 0.5);
+}
+
+
+
+.i-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 .pot {
-    width: 25rpx;
-    height: 25px;
+    position: relative;
+    margin-left: 7rpx;
+    z-index: 1;
+    width: 45rpx;
+    height: 45rpx;
+    background-color: rgb(248, 234, 172);
+    border-radius: 50%;
+}
+
+.innerPot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    width: 35rpx;
+    height: 35rpx;
     align-items: center;
+    background-color: rgb(120, 10, 245);
+    border-radius: 50%;
+    line-height: 12rpx;
 }
 
 .outerContent {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin:40rpx 0;
+    margin: 40rpx 0;
 }
 
 .content {
@@ -137,9 +168,11 @@ image {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 91vw;
+    width: 94vw;
     background-color: #fff;
-    box-shadow:1px 1px 1px #47484c;
+    /* box-shadow:1px 1px 1px #47484c; */
+    border: 1px solid rgb(204, 204, 214);
+    border-radius: 15rpx;
 }
 
 .right {
@@ -149,8 +182,10 @@ image {
 }
 
 .traffic {
-    padding-bottom: 20rpx;
-    border-bottom: 1px solid rgb(116, 104, 104);
+    padding: 15rpx 0;
+    margin-right: 40rpx;
+    border-bottom: 1px solid rgb(196, 203, 207);
+    color: rgb(12, 154, 248)
 }
 
 .road {
@@ -159,14 +194,18 @@ image {
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    margin-top: 20rpx;
+    margin: 20rpx 0;
 }
+
 .place {
-    font-weight: 550
+    font-weight: 550;
+    font-size: 22px;
 }
+
 .point {
-    font-size:16px;
+    font-size: 16px;
 }
+
 .goTime {
     font-size: 12px;
     color: blue;
