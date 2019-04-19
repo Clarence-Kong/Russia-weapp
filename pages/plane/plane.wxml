@@ -14,19 +14,19 @@
                     天气
                 </view>
 
-                <view class=" bon list">
+                <view class=" bon list" bindtap="list">
                     <view>
                         <i-icon type="tasklist" size="22" color="aliceblue" />
                     </view>
                     清单
                 </view>
-                <view class=" bon count">
+                <view class=" bon count" bindtap="count">  
                     <view>
                         <i-icon type="redpacket_fill" size="22" color="aliceblue" />
                     </view>
                     记账
                 </view>
-                <view class=" bon work">
+                <view class=" bon work" bindtap="work">
                     <view>
                         <i-icon type="document_fill" size="22" color="aliceblue" />
                     </view>

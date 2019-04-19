@@ -1,3 +1,5 @@
+<!--pages/plane/jizhang.wxml-->
+<text>pages/plane/jizhang.wxml</text>
 <view class="container">
   <view class="section">
     <input placeholder="记账..." bindinput="inputContent" auto-focus />

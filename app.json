@@ -4,7 +4,9 @@
     "pages/index/index",
     "pages/plane/plane",
     "pages/logs/logs",
-    "pages/plane/jizhang",
+    "pages/plane/work",
+    "pages/plane/list",
+    "pages/plane/count",
     "pages/plane/wether/wether"
   ],
   "window": {

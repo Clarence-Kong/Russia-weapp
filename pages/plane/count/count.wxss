@@ -1,4 +1,4 @@
-.section {
+/* pages/plane/jizhang.wxss */.section {
     padding: 20rpx 0;
     border-bottom: 1rpx solid #DDD;
     font-size: 30rpx;
