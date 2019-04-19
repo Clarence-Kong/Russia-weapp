@@ -1,65 +1,77 @@
+//index.js
+
+var util = require("../../utils/util.js");
+//获取应用实例
+var app = getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    
+    userInfo: {},
+    buttonLoading: false, 
+    accountData:[],
+    accountTotal:0
   },
+  onLoad: function () {
+    console.log('onLoad')
+    var that = this;
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
+    // 获取记录
+    var tempAccountData = wx.getStorageSync("accountData") || [];
+    this.caculateTotal(tempAccountData);
+    this.setData({
+        accountData: tempAccountData
+    });
+
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
+  // 计算总额
+  caculateTotal:function(data){
+      var tempTotal = 0;
+      for(var x in data){
+          tempTotal += parseFloat(data[x].amount);
+      }
+      this.setData({
+        accountTotal: tempTotal
+      });
   },
+  //表单提交
+  formSubmit:function(e){
+      this.setData({
+        buttonLoading: true
+      });
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
+      var that = this;
+      setTimeout(function(){
+          var inDetail = e.detail.value.inputdetail;
+          var inAmount = e.detail.value.inputamount;
+          if(inDetail.toString().length <= 0 || inAmount.toString().length <= 0){
+              console.log("can not empty");
+              that.setData({
+                buttonLoading: false
+              });
+              return false;
+          }
+          
+          //新增记录
+          var tempAccountData = wx.getStorageSync("accountData") || [];
+          tempAccountData.unshift({detail:inDetail,amount:inAmount});
+          wx.setStorageSync("accountData",tempAccountData);
+          that.caculateTotal(tempAccountData);
+          that.setData({
+              accountData: tempAccountData,
+              buttonLoading: false
+          });
+
+      },1000);
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
+  //删除行
+  deleteRow: function(e){
+     var that = this;
+     var index = e.target.dataset.indexKey;
+     var tempAccountData = wx.getStorageSync("accountData") || [];
+     tempAccountData.splice(index,1);
+     wx.setStorageSync("accountData",tempAccountData);
+     that.caculateTotal(tempAccountData);
+     that.setData({
+        accountData: tempAccountData,
+     });
   }
 })
