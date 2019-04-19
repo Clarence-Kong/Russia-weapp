@@ -1,66 +1,104 @@
-// pages/plane/jizhang.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    todo: '',
+    todos: [],
+    leftCount: 1,
+    allFinished: false,
+    allSetting: true,
+    clearSetting: true
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  save: function () {
+    wx.setStorageSync('todos', this.data.todos);
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
+    var todos = wx.getStorageSync('todos');
+    if (todos) {
+      var leftCount = todos.filter(function (item) {
+        return !item.finished;
+      }).length;
+      this.setData({ todos: todos, leftCount: leftCount, allFinished: !leftCount });
+    }
 
+    var allSetting = wx.getStorageSync('allSetting');
+    if (typeof allSetting == 'boolean') {
+      this.setData({ allSetting: allSetting });
+    }
+
+    var clearSetting = wx.getStorageSync('clearSetting');
+    if (typeof clearSetting == 'boolean') {
+      this.setData({ clearSetting: clearSetting });
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  onItemRemove: function (e) {
+    var index = e.currentTarget.dataset.index;
+    var todos = this.data.todos;
+    var remove = todos.splice(index, 1)[0];
+    this.setData({
+      todos: todos,
+      leftCount: this.data.leftCount - (remove.finished ? 0 : 1)
+    });
+    this.save();
+    getApp().writeHistory(remove, 'delete', +new Date());
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  inputTodo: function (e) {
+    this.setData({ todo: e.detail.value });
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  addTodo: function (e) {
+    if (!this.data.todo || !this.data.todo.trim()) return;
+    var todos = this.data.todos;
+    var todo = { content: this.data.todo, finished: false, id: +new Date() };
+    todos.push(todo);
+    this.setData({
+      todo: '',
+      todos: todos,
+      leftCount: this.data.leftCount + 1
+    });
+    this.save();
+    getApp().writeHistory(todo, 'create', +new Date());
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  toggleTodo: function (e) {
+    var index = e.currentTarget.dataset.index;
+    var todos = this.data.todos;
+    var todo = todos[index];
+    todo.finished = !todo.finished;
+    var leftCount = this.data.leftCount + (todo.finished ? -1 : 1);
+    this.setData({
+      todos: todos,
+      leftCount: leftCount,
+      allFinished: !leftCount
+    });
+    this.save();
+    getApp().writeHistory(todo, todo.finished ? 'finish' : 'restart', +new Date());
   },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+  toggleAll: function (e) {
+    var allFinished = !this.data.allFinished;
+    var todos = this.data.todos.map(function (todo) {
+      todo.finished = allFinished;
+      return todo;
+    });
+    this.setData({
+      todos: todos,
+      leftCount: allFinished ? 0 : todos.length,
+      allFinished: allFinished
+    })
+    this.save();
+    getApp().writeHistory(null, allFinished ? 'finishAll' : 'restartAll', +new Date());
+  },
 
+  clearFinished: function (e) {
+    var todos = this.data.todos;
+    var remains = todos.filter(function (todo) {
+      return !todo.finished;
+    });
+    this.setData({ todos: remains });
+    this.save();
+    getApp().writeHistory(null, 'clear', +new Date());
   }
 })
