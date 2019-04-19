@@ -4,7 +4,6 @@
     "pages/index/index",
     "pages/plane/plane",
     "pages/logs/logs",
-    "pages/plane/count",
     "pages/plane/wether"
   ],
   "window": {
