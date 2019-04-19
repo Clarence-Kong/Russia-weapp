@@ -7,7 +7,7 @@ Page({
         indicatorDots: true,
         vertical: false,
         autoplay: true,
-        interval: 300,
+        interval: 900,
         duration: 200,
         circular: true
  },
