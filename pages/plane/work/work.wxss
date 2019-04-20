@@ -61,7 +61,7 @@
 .widgets__list_show{
     display: block;
 }
-/*
+
 .widgets__list{
     height: 0;
     overflow: hidden;
@@ -78,7 +78,7 @@
     opacity: 1;
     transform: translateY(0);
 }
-*/
+
 
 .widget{
     position: relative;
