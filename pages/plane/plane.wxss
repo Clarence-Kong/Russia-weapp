@@ -91,7 +91,10 @@ image {
     text-align: center;
 }
 
-.day {
+.day1{
+    padding-left: 30rpx;
+}
+ .day {
     font-size: 22px;
 }
 
@@ -108,6 +111,12 @@ image {
     background-color: rgba(127, 236, 194, 0.925);
     border-radius: 50%;
     margin-right: 15rpx;
+    z-index: -1;
+}
+
+.potFirst {
+    left: 30rpx;
+    top:70rpx;
 }
 
 .line {
@@ -117,7 +126,7 @@ image {
     z-index: -10;
     top: 35rpx;
     width: 7rpx;
-    height: 70vh;
+    height: 389vh;
     background-color: rgba(185, 157, 157, 0.5);
 }
 
@@ -132,8 +141,7 @@ image {
 
 .pot {
     position: relative;
-    margin-left: 7rpx;
-    z-index: 1;
+    margin-left: 1rpx;
     width: 45rpx;
     height: 45rpx;
     background-color: rgb(248, 234, 172);
@@ -154,7 +162,7 @@ image {
     line-height: 12rpx;
 }
 
-.innerPot_palces {
+.innerPot_places {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -163,7 +171,7 @@ image {
     width: 35rpx;
     height: 35rpx;
     align-items: center;
-    background-color: rgb(255, 36, 127);
+    background-color: rgb(197, 10, 88);
     border-radius: 50%;
     line-height: 12rpx;
 }
@@ -249,5 +257,5 @@ image {
 
 .places {
     font-size: 36rpx;
-    float:left;
+    float: left;
 }

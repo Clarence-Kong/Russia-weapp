@@ -25,7 +25,7 @@
 .i-sticky-fixed .i-sticky-title {
     position: fixed;
     top: 0;
-    z-index: 30;
+    z-index: 10;
     border: 0;
     background-color: #eee;
 }
