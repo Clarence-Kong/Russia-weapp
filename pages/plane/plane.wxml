@@ -63,13 +63,13 @@
                                 <view class="startPlace">
                                     <view class="place">哈尔滨</view>
                                     <view class="point">哈尔滨站</view>
-                                    <view class="goTime">20:00</view>
+                                    <view class="goTime">22:34</view>
                                 </view>
                                 <view>--></view>
                                 <view class="toPlace">
                                     <view class="place">绥芬河</view>
                                     <view class="point">绥芬河站</view>
-                                    <view class="goTime">20:00</view>
+                                    <view class="goTime">06:03</view>
                                 </view>
                             </view>
                         </view>
@@ -88,13 +88,13 @@
                                 <view class="startPlace">
                                     <view class="place">绥芬河</view>
                                     <view class="point">绥芬河站</view>
-                                    <view class="goTime">20:00</view>
+                                    <view class="goTime">09:00</view>
                                 </view>
                                 <view>--></view>
                                 <view class="toPlace">
                                     <view class="place">波格拉尼奇内</view>
                                     <view class="point">格洛泆科沃口岸</view>
-                                    <view class="goTime">20:00</view>
+                                    <view class="goTime">11:00</view>
                                 </view>
                             </view>
                         </view>
@@ -364,13 +364,13 @@
                                 <view class="startPlace">
                                     <view class="place">符拉迪沃斯托克</view>
                                     <view class="point">伊斯托克酒店</view>
-                                    <view class="goTime">20:00</view>
+                                    <!-- <view class="goTime">20:00</view> -->
                                 </view>
                                 <view>--></view>
                                 <view class="toPlace">
                                     <view class="place">波格拉尼奇内</view>
                                     <view class="point">格洛泆科沃口岸</view>
-                                    <view class="goTime">20:00</view>
+                                    <!-- <view class="goTime">20:00</view> -->
                                 </view>
                             </view>
                         </view>
@@ -389,13 +389,13 @@
                                 <view class="startPlace">
                                     <view class="place">波格拉尼奇内</view>
                                     <view class="point">格洛泆科沃口岸</view>
-                                    <view class="goTime">20:00</view>
+                                    <view class="goTime">15:00</view>
                                 </view>
                                 <view>--></view>
                                 <view class="toPlace">
                                     <view class="place">绥芬河</view>
                                     <view class="point">绥芬河站</view>
-                                    <view class="goTime">20:00</view>
+                                    <view class="goTime">17:00</view>
                                 </view>
                             </view>
                         </view>
@@ -414,13 +414,13 @@
                                 <view class="startPlace">
                                     <view class="place">绥芬河</view>
                                     <view class="point">绥芬河站</view>
-                                    <view class="goTime">20:00</view>
+                                    <view class="goTime">17:20</view>
                                 </view>
                                 <view>--></view>
                                 <view class="toPlace">
                                     <view class="place">哈尔滨</view>
                                     <view class="point">哈尔滨西站</view>
-                                    <view class="goTime">20:00</view>
+                                    <view class="goTime">20:19</view>
                                 </view>
                             </view>
                         </view>

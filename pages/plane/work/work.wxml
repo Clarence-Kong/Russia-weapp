@@ -50,7 +50,7 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                         <view class="widget__line"></view>
                     </navigator>
-                    <!--
+<!--                     
                     <navigator  class="widget">
                         <text class="widget__name">景区位置</text>
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
