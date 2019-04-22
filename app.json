@@ -1,13 +1,21 @@
 {
   "pages": [
     "pages/launch/launch",
-    "pages/plane/work/work",
     "pages/plane/plane",
     "pages/plane/count/count",
     "pages/plane/wether/wether",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/plane/list/list"
+    "pages/plane/list/list",
+    "pages/plane/work/work",
+    "pages/plane/work/date/one/one",
+    "pages/plane/work/date/two/two",
+    "pages/plane/work/date/tree/tree",
+    "pages/plane/work/date/four/four",
+    "pages/plane/work/date/five/five",
+    "pages/plane/work/date/six/six",
+    "pages/plane/work/date/seven/seven",
+    "pages/plane/work/date/eight/eight"
   ],
   "window": {
     "backgroundTextStyle": "dark",
