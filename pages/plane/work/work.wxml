@@ -236,13 +236,13 @@
                 </view>
             </view>
             <view class="widgets__item">
-                <view id="railway" class="widgets__info {{maptShow ? 'widgets__info_show' : ''}}"
+                <view id="railway" class="widgets__info {{railwayShow ? 'widgets__info_show' : ''}}"
                     bindtap="widgetsToggle">
                     <text class="widgets__info-name">缆索铁路</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
-                <view class="widgets__list {{mapShow ? 'widgets__list_show' : ''}}">
-                    <navigator url='date/seven/seven' class="widget">
+                <view class="widgets__list {{railwayShow ? 'widgets__list_show' : ''}}">
+                    <navigator url='date/nine/nine' class="widget">
                         <text class="widget__name">景区介绍</text>
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                         <view class="widget__line"></view>
@@ -261,12 +261,12 @@
                 </view>
             </view>
             <view class="widgets__item">
-                <view id="easy" class="widgets__info {{maptShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                <view id="east" class="widgets__info {{eastShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
                     <text class="widgets__info-name">远东苏维埃政权战士纪念碑</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
-                <view class="widgets__list {{mapShow ? 'widgets__list_show' : ''}}">
-                    <navigator url='date/seven/seven' class="widget">
+                <view class="widgets__list {{eastShow ? 'widgets__list_show' : ''}}">
+                    <navigator url='date/ten/ten' class="widget">
                         <text class="widget__name">景区介绍</text>
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                         <view class="widget__line"></view>

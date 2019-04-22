@@ -15,7 +15,9 @@
     "pages/plane/work/date/five/five",
     "pages/plane/work/date/six/six",
     "pages/plane/work/date/seven/seven",
-    "pages/plane/work/date/eight/eight"
+    "pages/plane/work/date/eight/eight",
+    "pages/plane/work/date/nine/nine",
+    "pages/plane/work/date/ten/ten"
   ],
   "window": {
     "backgroundTextStyle": "dark",
