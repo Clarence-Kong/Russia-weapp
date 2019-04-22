@@ -7,28 +7,19 @@
     "pages/plane/count/count",
     "pages/plane/wether/wether",
     "pages/index/index",
+<<<<<<< HEAD
+    "pages/logs/logs",
+    "pages/plane/work/work",
+    "pages/plane/list/list"
+=======
     "pages/logs/logs"
+>>>>>>> 1e9aff5c8502dd244bfb28a7443bdb92d7345c56
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#47484c",
    
-    "navigationBarTitleText": "攻略",
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    "navigationBarTitleText": "攻略",   
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

@@ -37,14 +37,15 @@
     </view>
 
     <view class="bottom">
+        <view class="tit-pot potFirst">
+            <view class="line"></view>
+        </view>
         <i-sticky scrollTop="{{scrollTop}}">
 
             <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
                 <view slot="title" class="title">
-                    <view class="tit-pot">
-                        <view class="line"></view>
-                    </view>
-                    <view class="time">
+
+                    <view class="time day1">
                         <view class="day">Day-1</view>
                         <view>哈尔滨</view>
                     </view>
@@ -129,7 +130,6 @@
             <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
                 <view slot="title" class="title">
                     <view class="tit-pot">
-                        <view class="line"></view>
                     </view>
                     <view class="time">
                         <view class="day">Day-2</view>
@@ -231,7 +231,7 @@
             <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
                 <view slot="title" class="title">
                     <view class="tit-pot">
-                        <view class="line"></view>
+                        
                     </view>
                     <view class="time">
                         <view class="day">Day-3</view>
@@ -313,7 +313,6 @@
             <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
                 <view slot="title" class="title">
                     <view class="tit-pot">
-                        <view class="line"></view>
                     </view>
                     <view class="time">
                         <view class="day">Day-4</view>
@@ -345,7 +344,7 @@
             <i-sticky-item i-class="i-sticky-demo-title" id="outTitle">
                 <view slot="title" class="title">
                     <view class="tit-pot">
-                        <view class="line"></view>
+
                     </view>
                     <view class="time">
                         <view class="day">Day-5</view>
