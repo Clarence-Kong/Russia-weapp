@@ -1,10 +1,11 @@
 var pageData = {},
   type = [
-    'view', 'content', 'form', 'interact', 'nav', 'media', 'map', 'canvas','railway','east'
+    'view', 'content', 'form', 'interact', 'nav', 'media', 'map', 'canvas', 'railway', 'east'
   ];
 
 pageData.widgetsToggle = function (e) {
-  var id = e.currentTarget.id, data = {};
+  var id = e.currentTarget.id,
+    data = {};
   for (var i = 0, len = type.length; i < len; ++i) {
     data[type[i] + 'Show'] = false;
   }
