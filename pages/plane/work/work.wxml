@@ -1,41 +1,47 @@
 <view class="index">
     <view class="head">
         <view class="title">海参崴景区</view>
-        <view class="desc">海参崴热门景点</view>
+        <view class="desc">海参崴十大景点</view>
     </view>
 </view>
 
 <scroll-view id="hua" scroll-x="true" style=" white-space: nowrap; display: flex" scroll-into-view="if">
-<view id="if" style="background: yellow; width: 60px; height: 20px; display: inline-block"></view>
-<view id="itr" style="background: blue; width:60px; height: 20px; display: inline-block"></view>
-<view id="it" style="background: green; width: 60px; height: 20px; display: inline-block"></view>
-<view id="io" style="background: red; width: 60px; height: 20px; display: inline-block" ></view>
-<view id="ifq" style="background: yellow; width: 60px; height: 20px; display: inline-block"></view>
-<view id="itrq" style="background: blue; width:60px; height: 20px; display: inline-block"></view>
-<view id="itq" style="background: green; width: 60px; height: 20px; display: inline-block"></view>
-<view id="ioq" style="background: red; width: 60px; height: 20px; display: inline-block" ></view>
+    <view id="if" style="background: yellow; width: 60px; height: 20px; display: inline-block"></view>
+    <view id="itr" style="background: blue; width:60px; height: 20px; display: inline-block"></view>
+    <view id="it" style="background: green; width: 60px; height: 20px; display: inline-block"></view>
+    <view id="io" style="background: red; width: 60px; height: 20px; display: inline-block"></view>
+    <view id="ifq" style="background: yellow; width: 60px; height: 20px; display: inline-block"></view>
+    <view id="itrq" style="background: blue; width:60px; height: 20px; display: inline-block"></view>
+    <view id="itq" style="background: green; width: 60px; height: 20px; display: inline-block"></view>
+    <view id="ioq" style="background: red; width: 60px; height: 20px; display: inline-block"></view>
 </scroll-view>
-<swiper indicator-dots="true" autoplay="true" duration="1000" bindchange="listenSwiper" >
-<!--swiper-item只能包含一个节点再多会自动删除-->
+<swiper indicator-dots="true" autoplay="true" duration="1000" bindchange="listenSwiper">
+    <!--swiper-item只能包含一个节点再多会自动删除-->
     <swiper-item>
-        <view style="height: 150px"><image src="/pages/image/bmy3.jpg" style="width:100%;height:100%">  
-</image></view>
+        <view style="height: 150px">
+            <image src="/pages/image/bmy3.jpg" style="width:100%;height:100%">
+            </image>
+        </view>
     </swiper-item>
     <swiper-item>
-         <view style="height: 150px"><image src="/pages/image/bmy2.jpg" style="width:100%;height:100%">  
-</image></view>
+        <view style="height: 150px">
+            <image src="/pages/image/bmy2.jpg" style="width:100%;height:100%">
+            </image>
+        </view>
     </swiper-item>
-        <swiper-item>
-          <view style="height: 150px"><image src="/pages/image/bmy.jpg" style="width:100%;height:100%">  
-</image></view>
-    </swiper-item>    
+    <swiper-item>
+        <view style="height: 150px">
+            <image src="/pages/image/bmy.jpg" style="width:100%;height:100%">
+            </image>
+        </view>
+    </swiper-item>
 </swiper>
 <view class="index">
- <view class="body">
+    <view class="body">
         <view class="widgets">
             <view class="widgets__item">
                 <view id="view" class="widgets__info {{viewShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
-                    <text class="widgets__info-name">水族馆</text>
+                    <text class="widgets__info-name">C-56近卫军潜艇博物馆</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
                 <view class="widgets__list {{viewShow ? 'widgets__list_show' : ''}}">
@@ -55,11 +61,12 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                     </navigator>
                     -->
+                </view>
             </view>
-        </view> 
-        <view class="widgets__item">
-                <view id="content" class="widgets__info {{contentShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
-                    <text class="widgets__info-name">火车站</text>
+            <view class="widgets__item">
+                <view id="content" class="widgets__info {{contentShow ? 'widgets__info_show' : ''}}"
+                    bindtap="widgetsToggle">
+                    <text class="widgets__info-name">艾格尔舍利德灯塔 (托卡廖夫卡灯塔)</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
                 <view class="widgets__list {{contentShow ? 'widgets__list_show' : ''}}">
@@ -79,11 +86,11 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                     </navigator>
                     -->
+                </view>
             </view>
-        </view>
-        <view class="widgets__item">
+            <view class="widgets__item">
                 <view id="form" class="widgets__info {{formShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
-                    <text class="widgets__info-name">凯旋门</text>
+                    <text class="widgets__info-name">俄罗斯岛跨海大桥</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
                 <view class="widgets__list {{formShow ? 'widgets__list_show' : ''}}">
@@ -103,11 +110,12 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                     </navigator>
                     -->
+                </view>
             </view>
-        </view>
-        <view class="widgets__item">
-                <view id="interact" class="widgets__info {{interactShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
-                    <text class="widgets__info-name">教堂</text>
+            <view class="widgets__item">
+                <view id="interact" class="widgets__info {{interactShow ? 'widgets__info_show' : ''}}"
+                    bindtap="widgetsToggle">
+                    <text class="widgets__info-name">滨海边区国家大博物馆</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
                 <view class="widgets__list {{interactShow ? 'widgets__list_show' : ''}}">
@@ -127,11 +135,11 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                     </navigator>
                     -->
+                </view>
             </view>
-        </view>
-        <view class="widgets__item">
+            <view class="widgets__item">
                 <view id="nav" class="widgets__info {{navShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
-                    <text class="widgets__info-name">秦始皇陵</text>
+                    <text class="widgets__info-name">鹰巢山观景台</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
                 <view class="widgets__list {{navShow ? 'widgets__list_show' : ''}}">
@@ -151,11 +159,12 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                     </navigator>
                     -->
+                </view>
             </view>
-        </view>
-        <view class="widgets__item">
-                <view id="media" class="widgets__info {{mediaShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
-                    <text class="widgets__info-name">华清宫遗址</text>
+            <view class="widgets__item">
+                <view id="media" class="widgets__info {{mediaShow ? 'widgets__info_show' : ''}}"
+                    bindtap="widgetsToggle">
+                    <text class="widgets__info-name">金角湾大桥（金桥）</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
                 <view class="widgets__list {{mediaShow ? 'widgets__list_show' : ''}}">
@@ -175,11 +184,11 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                     </navigator>
                     -->
+                </view>
             </view>
-        </view>
-        <view class="widgets__item">
+            <view class="widgets__item">
                 <view id="map" class="widgets__info {{maptShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
-                    <text class="widgets__info-name">临潼博物馆</text>
+                    <text class="widgets__info-name">符拉迪沃斯托克火车站</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
                 <view class="widgets__list {{mapShow ? 'widgets__list_show' : ''}}">
@@ -199,11 +208,12 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                     </navigator>
                     -->
+                </view>
             </view>
-        </view>
-        <view class="widgets__item">
-                <view id="canvas" class="widgets__info {{canvasShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
-                    <text class="widgets__info-name">秦东陵</text>
+            <view class="widgets__item">
+                <view id="canvas" class="widgets__info {{canvasShow ? 'widgets__info_show' : ''}}"
+                    bindtap="widgetsToggle">
+                    <text class="widgets__info-name">符拉迪沃斯托克要塞</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
                 <view class="widgets__list {{canvasShow ? 'widgets__list_show' : ''}}">
@@ -223,11 +233,57 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                     </navigator>
                     -->
+                </view>
             </view>
-        </view>             
-    </view>       
-  </view>
+            <view class="widgets__item">
+                <view id="railway" class="widgets__info {{maptShow ? 'widgets__info_show' : ''}}"
+                    bindtap="widgetsToggle">
+                    <text class="widgets__info-name">缆索铁路</text>
+                    <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
+                </view>
+                <view class="widgets__list {{mapShow ? 'widgets__list_show' : ''}}">
+                    <navigator url='date/seven/seven' class="widget">
+                        <text class="widget__name">景区介绍</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <!--
+                    <navigator  class="widget">
+                        <text class="widget__name">景区位置</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator  class="widget">
+                        <text class="widget__name">景区评价</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                    </navigator>
+                    -->
+                </view>
+            </view>
+            <view class="widgets__item">
+                <view id="easy" class="widgets__info {{maptShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <text class="widgets__info-name">远东苏维埃政权战士纪念碑</text>
+                    <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
+                </view>
+                <view class="widgets__list {{mapShow ? 'widgets__list_show' : ''}}">
+                    <navigator url='date/seven/seven' class="widget">
+                        <text class="widget__name">景区介绍</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <!--
+                    <navigator  class="widget">
+                        <text class="widget__name">景区位置</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator  class="widget">
+                        <text class="widget__name">景区评价</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                    </navigator>
+                    -->
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
-
-
-
