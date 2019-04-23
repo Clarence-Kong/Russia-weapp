@@ -1,8 +1,7 @@
 <view class="index">
     <view class="head">
-        <view class="title">艾格尔舍利德灯塔 (托卡廖夫卡灯塔)</view>
-        <view class="desc">  符拉迪沃斯托克最南端地标，也是远东最古老的灯塔，位于符拉迪沃斯托克最南端延伸出海750米的石沙嘴，该石沙嘴被当地人称托卡廖夫卡沙洲Токаревская кошка。为了确保从阿穆尔湾前往符拉迪沃斯托克海港的船只安全地经过奧斯特雷角(东博斯普鲁斯海峡)，1876建立了灯塔。一百多年来，越来越多的人更多地把灯塔当做一个景点，如今，作为符拉迪沃斯托克的地标之一，灯塔的存在已经超出了最开始的导航意义。
-        灯塔的名称是为了纪念传奇人物：彼得大帝湾研究员-海军中校古斯塔夫·艾格尔舍利德。
+        <view class="title">缆索铁路（Владивостокский фуникулёр）</view>
+        <view class="desc">  符拉迪沃斯托克的缆索铁路作为城市交通工具1962年通车，是远东地区唯一的缆索铁路系统，也是俄罗斯现有两条缆索铁路系统的其中一条
         </view>
         <view><canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas></view>
     </view>
