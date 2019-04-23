@@ -9,38 +9,6 @@
       <view class="item{{ item.completed ? ' completed' : '' }}" wx:for="{{ todos }}" wx:key="{{ index }}" bindtap="toggleTodoHandle" data-index="{{ index }}">
         <!-- completed: success, todo: circle -->
         <icon class="checkbox" type="{{ item.completed ? 'success' : 'circle' }}"/>
-        <text class="name">身份证</text>
-        <text class="name">护照/港澳台通行证/绿卡及签证</text>
-        <text class="name">现金</text>
-        <text class="name">银行卡</text>
-        <text class="name">手机及充电器</text>
-        <text class="name">钥匙</text>
-        <text class="name">常用药品</text>
-        <text class="name">车票预定</text>
-        <text class="name">酒店预定</text>
-        <text class="name">旅行保险</text>
-        <text class="name">行程单</text>
-        <text class="name">接车预定</text>
-        <text class="name">租赁wifi</text>
-        <text class="name">境外电话卡</text>
-        <text class="name">电源转换器</text>
-        <text class="name">开通国际漫游</text>
-        <text class="name">充电宝</text>
-        <text class="name">笔记本电脑及电源</text>
-        <text class="name">iPad及电源</text>
-        <text class="name">相机/相机电池/充电设备</text>
-        <text class="name">三脚架</text>
-        <text class="name">洗漱用品</text>
-        <text class="name">卫生用品</text>
-        <text class="name">换洗衣物</text>
-        <text class="name">护肤品、化妆品</text>
-        <text class="name">剃须刀</text>
-        <text class="name">防晒衣</text>
-        <text class="name">遮阳帽</text>
-        <text class="name">防晒霜</text>
-        <text class="name">沙滩鞋</text>
-        <text class="name">太阳伞</text>
-        <text class="name">饮用水</text>
         <text class="name">{{ item.name }}</text>
         <icon class="remove" type="clear" size="16" catchtap="removeTodoHandle" data-index="{{ index }}"/>
       </view>
